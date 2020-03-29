@@ -21,4 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('diary','Diary\DiaryController@index');
 Route::post('diary','Diary\DiaryController@store');
 Route::put('diary/{id}','Diary\DiaryController@update');
-Route::delete('diary/{id}','Diary\DiaryController@delete');
+Route::delete('diary/{id}','Diary\DiaryController@destroy');
